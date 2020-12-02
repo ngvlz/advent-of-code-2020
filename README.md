@@ -8,4 +8,4 @@ This is the collection of solutions for [Advent of Code 2020](https://adventofco
 
 ## Solutions by day
 
-[Day 1](..ngvlz/advent-of-code-2020/day1/)
+[Day 1](tree/main/day1)
