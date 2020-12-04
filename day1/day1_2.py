@@ -9,4 +9,10 @@ def check_sum(data, k):
                 if data[x] + data[y] + data[z] == k:
                     return data[x], data[y], data[z]
 
-print(check_sum(data, 2020))
+def multiply(num_list):
+    result = 1
+    for num in num_list:
+        result *= num
+    return result
+
+print(multiply(check_sum(data, 2020)))
