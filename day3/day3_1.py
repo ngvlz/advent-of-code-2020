@@ -1,20 +1,20 @@
-map = list()
+def tree_encountered(slope_x, slope_y):
+    map = []
+    x = 0
+    tree = 0
+    with open('input') as _input:
+        for line in _input:
+            line = line.rstrip("\n")
+            square = list(line)
+            map.append(square)
+    map = map[::slope_y]
+    
+    for row in map:
+        if row[x] == "#":
+            tree+=1 
+        x+=slope_x
+        if x >= len(row):
+            x = x - len(row)
+    return(tree)
 
-with open('input') as _input:
-    for line in _input:
-        line = line.rstrip()
-        square = list(line)
-        map.append(square)
-
-x = 0
-tree = 0
-
-for row in map:
-    if row[x] == "#":
-        tree+=1 
-        print(f"at {x}, hello {tree} tree")
-    x+=3
-    if x >= len(row):
-        x = x - len(row)
-
-print(tree)
+print("Tree encountered:",tree_encountered(3, 1))
