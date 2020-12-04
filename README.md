@@ -11,3 +11,5 @@ This is the collection of solutions for [Advent of Code 2020](https://adventofco
 [Day 1](day1)
 
 [Day 2](day2)
+
+[Day 3](day3)
