@@ -7,9 +7,9 @@ input_passwd = list_of_passwords.get_input()
 lines_of_passwd = input_passwd.split('\n')
 
 for line in lines_of_passwd:
-    passwd = line.split(': ', 1)[1]
+    passwd = line.split(': ')[1]
 
-    passwd_policy = line.split(': ', 1)[0]
+    passwd_policy = line.split(': ')[0]
     get_position_from_policy = passwd_policy.split(' ')[0].split('-')
     position_converted_to_int = list(map(int, get_position_from_policy))
     letter_to_check = passwd_policy.split(' ')[1]
