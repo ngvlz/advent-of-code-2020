@@ -36,11 +36,11 @@ valid_passport = [p for p in valid_passport_list if (
                     and (p[field_list_wo_cid[1]] in ['amb','blu','brn','gry','grn','hzl','oth'])
                     and (p[field_list_wo_cid[2]].isdigit() and len(p[field_list_wo_cid[2]])==4 and 2020 <= int(p[field_list_wo_cid[2]]) <= 2030)
                     and (bool(re.match("^#[a-zA-Z0-9]{6}$", p[field_list_wo_cid[3]])) == True)
-                    and ((p[field_list_wo_cid[4]][:-2].isdigit() == True and 150 <= int(p[field_list_wo_cid[4]][:-2]) <= 193 and p[field_list_wo_cid[4]][-2:]=='cm') 
+                    and ((p[field_list_wo_cid[4]][:-2].isdigit() and 150 <= int(p[field_list_wo_cid[4]][:-2]) <= 193 and p[field_list_wo_cid[4]][-2:]=='cm') 
                         or 
-                        (p[field_list_wo_cid[4]][:-2].isdigit() == True and 59 <= int(p[field_list_wo_cid[4]][:-2]) <= 76 and p[field_list_wo_cid[4]][-2:]=='in'))
+                        (p[field_list_wo_cid[4]][:-2].isdigit() and 59 <= int(p[field_list_wo_cid[4]][:-2]) <= 76 and p[field_list_wo_cid[4]][-2:]=='in'))
                     and (p[field_list_wo_cid[5]].isdigit() and len(p[field_list_wo_cid[5]])==4 and 2010 <= int(p[field_list_wo_cid[5]]) <= 2020)
                     and (bool(re.match("^[0-9]{9}$", p[field_list_wo_cid[6]])) == True)
                     )]
-           
-print('Number of valid passport:',len(valid_passport))
+
+print('Part 2: Number of valid passport:',len(valid_passport))
