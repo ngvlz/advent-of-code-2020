@@ -17,3 +17,5 @@ Puzzle inputs and problem texts have been **modified**. They function as notes, 
 [Day 2](day2)
 
 [Day 3](day3)
+
+[Day 4](day4)
