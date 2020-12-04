@@ -6,6 +6,10 @@ This is the collection of solutions for [Advent of Code 2020](https://adventofco
 
 **Author**: Louis Nguyen
 
+## Note
+
+Puzzle inputs and problem texts have been **modified**. They function as notes, reminding what the code solves, for the author and anyone who visit this repo. Links to the actual puzzles are under each day.
+
 ## Solutions by day
 
 [Day 1](day1)
