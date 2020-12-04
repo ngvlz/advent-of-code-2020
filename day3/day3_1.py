@@ -5,8 +5,8 @@ def tree_encountered(slope_x, slope_y):
     with open('input') as _input:
         for line in _input:
             line = line.rstrip("\n")
-            square = list(line)
-            map.append(square)
+            line = list(line)
+            map.append(line)
     map = map[::slope_y]
     
     for row in map:
