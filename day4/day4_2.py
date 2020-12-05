@@ -22,10 +22,10 @@ f = sorted(['byr','iyr','eyr','hgt','hcl','ecl','pid'])  # --> sorted field list
 valid_passport_list = []
 
 for p in passport_list:
-    sorted_key = sorted(p.keys())
-    if 'cid' in sorted_key:
-        sorted_key.remove('cid')
-    check = all(item in sorted_key for item in f)
+    sorted_field = sorted(p.keys())
+    if 'cid' in sorted_field:
+        sorted_field.remove('cid')
+    check = all(item in sorted_field for item in f)
     if check == True:
         valid_passport_list.append(p)
 
