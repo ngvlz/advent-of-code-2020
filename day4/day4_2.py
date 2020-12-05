@@ -31,15 +31,21 @@ for p in passport_list:
 
 #* sorted key list: ['byr', 'ecl', 'eyr', 'hcl', 'hgt', 'iyr', 'pid']
 valid_passport = [p for p in valid_passport_list if (
-                        (p[f[0]].isdigit() and len(p[f[0]])==4 and 1920 <= int(p[f[0]]) <= 2002)
-                    and (p[f[1]] in ['amb','blu','brn','gry','grn','hzl','oth'])
-                    and (p[f[2]].isdigit() and len(p[f[2]])==4 and 2020 <= int(p[f[2]]) <= 2030)
-                    and (bool(re.match("^#[a-zA-Z0-9]{6}$", p[f[3]])) == True)
-                    and ((p[f[4]][:-2].isdigit() and 150 <= int(p[f[4]][:-2]) <= 193 and p[f[4]][-2:]=='cm') 
+                    (p[f[0]].isdigit() and len(p[f[0]])==4 and 1920 <= int(p[f[0]]) <= 2002)
+                    and 
+                    (p[f[1]] in ['amb','blu','brn','gry','grn','hzl','oth'])
+                    and 
+                    (p[f[2]].isdigit() and len(p[f[2]])==4 and 2020 <= int(p[f[2]]) <= 2030)
+                    and 
+                    (bool(re.match("^#[a-zA-Z0-9]{6}$", p[f[3]])) == True)
+                    and 
+                    ((p[f[4]][:-2].isdigit() and 150 <= int(p[f[4]][:-2]) <= 193 and p[f[4]][-2:]=='cm') 
                         or 
-                        (p[f[4]][:-2].isdigit() and 59 <= int(p[f[4]][:-2]) <= 76 and p[f[4]][-2:]=='in'))
-                    and (p[f[5]].isdigit() and len(p[f[5]])==4 and 2010 <= int(p[f[5]]) <= 2020)
-                    and (bool(re.match("^[0-9]{9}$", p[f[6]])) == True)
+                    (p[f[4]][:-2].isdigit() and 59 <= int(p[f[4]][:-2]) <= 76 and p[f[4]][-2:]=='in'))
+                    and 
+                    (p[f[5]].isdigit() and len(p[f[5]])==4 and 2010 <= int(p[f[5]]) <= 2020)
+                    and 
+                    (bool(re.match("^[0-9]{9}$", p[f[6]])) == True)
                     )]
 
 print('Part 2: Number of valid passport:',len(valid_passport))
