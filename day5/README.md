@@ -31,7 +31,7 @@ Check through the list of boarding passes. **What is the highest Seat ID on the 
 
 Your seat is the only missing boarding pass in your list.
 
-Seats at the very front and very back don't exist, which means they are not in the list of boarding passes. 
+Seats at the very front and very back don't exist, which means they are not in the list of boarding passes.
 
 The seat with IDs `+ 1` and `- 1` from your seat will be in the boarding pass. **What is your Seat ID?**
 
