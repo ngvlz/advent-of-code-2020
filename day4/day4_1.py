@@ -17,17 +17,16 @@ for i in passports_separated:
         passport[pair.split(':')[0]] = pair.split(':')[1]
     passport_list+=[passport]
 
-field_list_wo_cid = sorted(['byr','iyr','eyr','hgt','hcl','ecl','pid'])  # --> sorted key list
-field_list_to_check = []
+f = sorted(['byr','iyr','eyr','hgt','hcl','ecl','pid'])  # --> sorted field list
 
 valid_passport_list = []
 
-for i in passport_list:
-    sorted_key = sorted(i.keys())
-    if 'cid' in sorted_key:
-        sorted_key.remove('cid')
-    check = all(item in sorted_key for item in field_list_wo_cid)
+for p in passport_list:
+    sorted_field = sorted(p.keys())
+    if 'cid' in sorted_field:
+        sorted_field.remove('cid')
+    check = all(item in sorted_field for item in f)
     if check == True:
-        valid_passport_list.append(i)
+        valid_passport_list.append(p)
 
 print('Number of valid passport:',len(valid_passport_list))
