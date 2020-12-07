@@ -2,7 +2,7 @@
 
 ## Puzzle 1
 
-You have a `shiny gold` bag. If you wanted to carry it in at least one other bag, how many different bag colors would be valid for the outermost bag? 
+You have a `shiny gold` bag. If you wanted to carry it in at least one other bag, how many different bag colors would be valid for the outermost bag?
 
 In other words: **how many colors can, eventually, contain at least one `shiny gold` bag?**
 
