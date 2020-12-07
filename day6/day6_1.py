@@ -10,13 +10,13 @@ ans_by_groups = [g.split('\n') for g in groups]
 
 group_ans = []
 
-for answer_by_person in ans_by_groups:
-    ans_by_each_group = []
-    for answer in answer_by_person:
-        for a in answer:
-            if a not in ans_by_each_group:
-                ans_by_each_group.append(a)
-    group_ans.append(ans_by_each_group)
+for ans_by_group in ans_by_groups:
+    ans_yes = []
+    for ans in ans_by_group:
+        for a in ans:
+            if a not in ans_yes:
+                ans_yes.append(a)
+    group_ans.append(ans_yes)
 
 number_of_ans = [len(g) for g in group_ans]
 
