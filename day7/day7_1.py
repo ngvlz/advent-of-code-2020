@@ -11,7 +11,9 @@ bag_l = []
 for r in rules:
     r = r.strip(".")
     r = re.sub(" bags| bag|\d |", "", r)
-    l[re.split(" contain ", r)[0]] = re.split(" contain ", r)[1].split(", ")
+    containing_bag = re.split(" contain ", r)[0]
+    bag_info = re.split(" contain ", r)[1].split(", ")
+    l[containing_bag] = bag_info
 
 
 def find_bag(value, l):
