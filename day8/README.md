@@ -2,7 +2,7 @@
 
 ## Puzzle 1
 
-The boot code is represented as a text file with one instruction per line of text. 
+The boot code is represented as a text file with one instruction per line of text.
 
 Each instruction consists of an **operation** (`acc`, `jmp`, or `nop`) and an **argument** (a signed number like `+4` or `-20`).
 
@@ -10,11 +10,11 @@ Each instruction consists of an **operation** (`acc`, `jmp`, or `nop`) and an **
 
   After an `acc` instruction, the instruction immediately below it is executed next.
 
-- `jmp` jumps to a new instruction relative to itself. 
+- `jmp` jumps to a new instruction relative to itself.
   
   The next instruction to execute is found using the argument as an offset from the jmp instruction
 
-- `nop` stands for No OPeration - it does nothing. 
+- `nop` stands for No OPeration - it does nothing.
   
   The instruction immediately below it is executed next.
 
@@ -27,3 +27,7 @@ Before any instruction is executed a second time, **what value is in the accumul
 By changing exactly **one** `jmp` (to `nop`) or `nop` (to `jmp`), fix the program.
 
 **What is the value of the accumulator after the program terminates normally?**
+
+## Source
+
+[Advent of Code 2020 Day 8](https://adventofcode.com/2020/day/8 "AoC 2020 Day 8")
