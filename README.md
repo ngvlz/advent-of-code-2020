@@ -12,22 +12,22 @@ Puzzle inputs and problem texts have been **modified**. They function as notes, 
 
 ## Solutions by day
 
-[Day 1](day1)
+[Day 1](day01)
 
-[Day 2](day2)
+[Day 2](day02)
 
-[Day 3](day3)
+[Day 3](day03)
 
-[Day 4](day4)
+[Day 4](day04)
 
-[Day 5](day5)
+[Day 5](day05)
 
-[Day 6](day6)
+[Day 6](day06)
 
-[Day 7](day7)
+[Day 7](day07)
 
-[Day 8](day8)
+[Day 8](day08)
 
-[Day 9](day9)
+[Day 9](day09)
 
 [Day 10](day10)
