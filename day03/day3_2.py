@@ -1,18 +1,18 @@
 slopes = [(1,1),(3,1),(5,1),(7,1),(1,2)]
 
 def tree_encountered(slope_x, slope_y):
-    map = []
+    tree_map = []
     x = 0
     tree = 0
     with open('input') as _input:
         for line in _input:
             line = line.rstrip("\n")
             line = list(line)
-            map.append(line)
+            tree_map.append(line)
 
-    map = map[::slope_y]
+    tree_map = tree_map[::slope_y]
     
-    for row in map:
+    for row in tree_map:
         if row[x] == "#":
             tree+=1 
         x+=slope_x

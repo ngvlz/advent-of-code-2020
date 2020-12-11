@@ -19,13 +19,12 @@ for r in rules:
 def find_bag(value, l):
     if "shiny gold" in l[value]:
         return True
-    else:
-        for i in l[value]:
-            if i == "no other":
-                pass
-            else:
-                if find_bag(i, l):
-                    return True
+    for i in l[value]:
+        if i == "no other":
+            pass
+        else:
+            if find_bag(i, l):
+                return True
 
                 
 for value in list(l.keys()):

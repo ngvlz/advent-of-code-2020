@@ -20,9 +20,8 @@ def find_invalid_num(queue):
             idx_next_num = idx_last_num + 1
             if data[idx_next_num] not in valid_nums:
                 raise Exception
-            else:
-                list_25_num.remove(list_25_num[0])
-                list_25_num.append(data[idx_next_num])
+            list_25_num.remove(list_25_num[0])
+            list_25_num.append(data[idx_next_num])
             queue.append((list_25_num, idx_next_num))
         except Exception:
             return data[idx_next_num]

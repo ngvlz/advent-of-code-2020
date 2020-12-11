@@ -1,6 +1,6 @@
-with open('input', 'r') as input:
+with open('input', 'r') as data:
     # bp = Boarding Pass
-    bp_data = input.read() 
+    bp_data = data.read() 
 
 bp_list = bp_data.split('\n')
 
