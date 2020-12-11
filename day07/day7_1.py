@@ -29,7 +29,7 @@ def find_bag(value, l):
 
                 
 for value in list(l.keys()):
-    if find_bag(value, l) == True and value not in bag_l:
+    if find_bag(value, l) is True and value not in bag_l:
         bag_l.append(value)
 
 print("Answer:",len(bag_l))

@@ -50,7 +50,7 @@ for idx, instruction in enumerate(boot_code):
 
 
     output = start_program(boot_code)
-    if output == False:
+    if output is False:
         boot_code[idx] = f'{operator} {arg}'
     else:
         print("Part 2 | Accumulator value:",output)

@@ -26,7 +26,7 @@ for p in passport_list:
     if 'cid' in sorted_field:
         sorted_field.remove('cid')
     check = all(item in sorted_field for item in f)
-    if check == True:
+    if check is True:
         valid_passport_list.append(p)
 
 #* sorted key list: ['byr', 'ecl', 'eyr', 'hcl', 'hgt', 'iyr', 'pid']
@@ -37,7 +37,7 @@ valid_passport = [p for p in valid_passport_list if (
                     and 
                     (p[f[2]].isdigit() and len(p[f[2]])==4 and 2020 <= int(p[f[2]]) <= 2030)
                     and 
-                    (bool(re.match("^#[a-zA-Z0-9]{6}$", p[f[3]])) == True)
+                    (bool(re.match("^#[a-zA-Z0-9]{6}$", p[f[3]])) is True)
                     and 
                     ((p[f[4]][:-2].isdigit() and 150 <= int(p[f[4]][:-2]) <= 193 and p[f[4]][-2:]=='cm') 
                         or 
@@ -45,7 +45,7 @@ valid_passport = [p for p in valid_passport_list if (
                     and 
                     (p[f[5]].isdigit() and len(p[f[5]])==4 and 2010 <= int(p[f[5]]) <= 2020)
                     and 
-                    (bool(re.match("^[0-9]{9}$", p[f[6]])) == True)
+                    (bool(re.match("^[0-9]{9}$", p[f[6]])) is True)
                     )]
 
 print('Part 2: Number of valid passport:',len(valid_passport))

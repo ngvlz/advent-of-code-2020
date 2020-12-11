@@ -15,7 +15,7 @@ for r in rules:
     bag_info = re.split(" contain ", r)[1].split(", ")
     for i, bag in enumerate(bag_info):
         if bag == "no other":
-            bag_info == None
+            bag_info is None
         else:
             bag_info[i] = bag.split(" ", 1)
             bag_info[i][0] = int(bag_info[i][0])

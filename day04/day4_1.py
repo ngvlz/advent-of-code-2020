@@ -26,7 +26,7 @@ for p in passport_list:
     if 'cid' in sorted_field:
         sorted_field.remove('cid')
     check = all(item in sorted_field for item in f)
-    if check == True:
+    if check is True:
         valid_passport_list.append(p)
 
 print('Number of valid passport:',len(valid_passport_list))
