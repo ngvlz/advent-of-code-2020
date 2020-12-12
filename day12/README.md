@@ -12,7 +12,7 @@ The navigation instructions (puzzle input) consists of a sequence of **single-ch
 - `R` ==> turn `right` the given number of degrees.
 - `F` ==> move `forward` by the given value in the direction the ship is currently facing.
 
-The ship starts by facing `east`. Only the `L` and `R` actions change the direction the ship is facing. The ship position looks something like `[east 17, north 3]` or `[west 10, south 8]`. **The ship's Manhattan distance** is the sum of the absolute values of its east/west position and its north/south position) from its starting position. 
+The ship starts by facing `east`. Only the `L` and `R` actions change the direction the ship is facing. The ship position looks something like `[east 17, north 3]` or `[west 10, south 8]`. **The ship's Manhattan distance** is the sum of the absolute values of its east/west position and its north/south position) from its starting position.
 
 Figure out where the navigation instructions lead. **What is the Manhattan distance between that location and the ship's starting position?**
 
