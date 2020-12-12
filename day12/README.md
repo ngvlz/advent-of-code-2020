@@ -26,10 +26,10 @@ You have been reading the instruction wrong. Almost all of the **actions** indic
 - `W` ==> move the waypoint `west` by the given value.
 - `L` ==> rotate the waypoint around the ship `left` (counter-clockwise) the given number of degrees.
 - `R` ==> rotate the waypoint around the ship `right` (clockwise) the given number of degrees.
-- `F` ==> move **the ship** forward to the waypoint a number of times equal to the given value.
+- `F` ==> move `the ship` `forward` to the waypoint a number of times equal to the given value.
 
 Figure out where the navigation instructions actually lead. **What is the Manhattan distance between that location and the ship's starting position?**
 
 ## Source
 
-[Advent of Code 2020 Day 12](https://adventofcode.com/2020/day/11 "AoC 2020 Day 12")
+[Advent of Code 2020 Day 12](https://adventofcode.com/2020/day/12 "AoC 2020 Day 12")
