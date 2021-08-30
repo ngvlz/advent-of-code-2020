@@ -1,6 +1,6 @@
 import re
 
-with open("input", 'r') as data:
+with open("\\OneDrive - Ferris State University\\_Personal\\_IT\\git\\advent_of_code\\day07\\input", 'r') as data:
     __input__ = data.read()
 
 rules = __input__.split("\n")
