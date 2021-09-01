@@ -36,16 +36,16 @@ for data in program:
         x_occurence = mem.count("X")
         # Cartesian product of input iterables
         x_combinations = product("01", repeat=x_occurence)
-        all_x_replaced = []
+        final_mem = []
 
         for combination in x_combinations:
-            modified = mem
+            modified_mem = mem
             for (idx, replacement) in zip_longest(x_idx, combination):
-                modified[idx] = replacement
-            modified = "".join(modified)
-            modified = int(modified, 2)
-            all_x_replaced += [modified]
-        for x in all_x_replaced:
-            memory[f"mem[{x}]"] = int(i[1])
+                modified_mem[idx] = replacement
+            modified_mem = "".join(modified_mem)
+            modified_mem = int(modified_mem, 2)
+            final_mem += [modified_mem]
+        for memory in final_mem:
+            memory[f"mem[{memory}]"] = int(i[1])
 
 print("Part 2 | The sum of all values left in memory:",sum(memory.values()))
