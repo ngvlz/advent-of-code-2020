@@ -14,9 +14,10 @@ Execute the initialization program. What is the **sum of all values** left in me
 
 A version 2 decoder chip doesn't modify the values being written at all. Instead, it acts as a memory address decoder. Immediately before a value is written to memory, each bit in the bitmask modifies the corresponding bit of the destination memory address in the following way:
 
-If the bitmask bit is `0`, the corresponding memory address bit is `unchanged`.
-If the bitmask bit is `1`, the corresponding memory address bit is `overwritten with 1`.
-If the bitmask bit is `X`, the corresponding memory address bit is `floating`.
+- If the bitmask bit is `0`, the corresponding memory address bit is `unchanged`.
+- If the bitmask bit is `1`, the corresponding memory address bit is `overwritten with 1`.
+- If the bitmask bit is `X`, the corresponding memory address bit is `floating`.
+
 A floating bit is not connected to anything and instead fluctuates unpredictably. In practice, this means the floating bits will take on all possible values, potentially causing many memory addresses to be written all at once!
 
 ## Question 2
